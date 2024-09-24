@@ -1,0 +1,41 @@
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+    z-index: 1000; /* Чтобы навигация была поверх остальных элементов */
+}
+.navbar{
+    font-size: var(--g-text-header-5-font-size)
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 20px; /* Отступы */
+    display: flex;
+    justify-content: space-around; /* Равномерное распределение */
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333; /* Цвет текста */
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #007BFF; /* Цвет при наведении */
+}
+
+/* Дополнительно: отступ для контента, чтобы не перекрывался навигацией */
+.container {
+    margin-top: 40px; /* Отступ под фиксированное меню */
+}
