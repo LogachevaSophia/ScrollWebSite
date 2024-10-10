@@ -13,5 +13,3 @@ function type(text, speed, element){
 }
 
 const typer = type(document.querySelector(".description .typer").innerHTML, 200, document.querySelector(".description .typer"))
-
-console.log(typer)
