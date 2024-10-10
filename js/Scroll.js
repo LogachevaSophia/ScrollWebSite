@@ -30,7 +30,8 @@ function scrollToScreen(index) {
 }
 const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 console.log(isMobile)
-if (!isMobile) {
+console.log( window.innerWidth)
+if (!isMobile || (isMobile && window.innerWidth > 600)) {
     html.classList.add('no-scroll');
     document.addEventListener('wheel', function (event) {
         if (isScrolling) return;

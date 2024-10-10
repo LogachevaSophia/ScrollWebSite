@@ -58,7 +58,7 @@ img.avatar {
     animation: blink 0.7s step-end infinite;
 }
 
-.projects .container {
+.projects .container, .skills .container {
     /* width: 80%; */
     /* background-color: red; */
     height: calc(100% - 50px);
@@ -66,6 +66,7 @@ img.avatar {
     padding: 0 var(--g-spacing-3) 0 var(--g-spacing-3);
     white-space: nowrap;
     /* Отключаем перенос на новую строку */
+    margin-top: 55px;
 }
 
 .projects .container .cards-list {
@@ -80,7 +81,7 @@ img.avatar {
 .projects .container .cards-list .card {
     flex: 0 0 calc(40% - var(--g-spacing-5));
     /* Устанавливаем ширину одной карточки */
-    width: 300px;
+    /* width: 300px; */
     /* Желаемая ширина карточки */
     max-width: calc(40% - var(--g-spacing-5));
     /* Максимальная ширина одной карточки */
@@ -123,6 +124,8 @@ img.avatar {
 }
 
 
+
+
 /* Анимация мигания курсора */
 @keyframes blink {
 
@@ -151,6 +154,7 @@ img.avatar {
         justify-content: space-around;
         overflow-x: unset;
         overflow-y: scroll;
+        max-height: 90%;
     }
     .projects .container .cards-list .card{
         flex: unset;

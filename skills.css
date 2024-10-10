@@ -1,0 +1,27 @@
+.skills-container .skills-box {
+    flex: 1 1 20rem;
+    background: white;
+    padding: 1rem 2rem 1rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--g-color-orange);
+    transition: .6s ease-in-out;
+    color: var(--g-color-blue);
+    /* max-height: 100px; */
+    animation: ani 2.5s forwards;
+    opacity: 0;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 70%;
+}
+
+@keyframes ani {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
