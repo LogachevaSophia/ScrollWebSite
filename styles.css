@@ -107,6 +107,7 @@ img.avatar {
 .projects .container .cards-list .card h2 {
     text-wrap: wrap;
     font-size: var(--g-text-header-7-font-size);
+    word-break: break-all;
 }
 
 .projects .container .cards-list .card .arrow {
@@ -144,6 +145,17 @@ img.avatar {
     body,
     html {
         --g-base-font-size: 3px;
+    }
+    .projects .container .cards-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        overflow-x: unset;
+        overflow-y: scroll;
+    }
+    .projects .container .cards-list .card{
+        flex: unset;
+        overflow-y: auto;
+        max-width: unset;
     }
 
 }

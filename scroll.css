@@ -93,7 +93,7 @@ a{
  }
 .container {
     height: 100vh;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* Отключаем прокрутку контейнера */
 }
 
