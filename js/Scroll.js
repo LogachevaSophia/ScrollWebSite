@@ -16,6 +16,12 @@ function scrollToScreen(index) {
     screensWrapper.style.transform = `translateY(${translateY}vh)`; // Плавно смещаем экраны
 
     currentScreenIndex = index;
+    if (index % 2 != 0 ){
+        document.querySelector(".navbar").classList.add("even")
+    }
+    else{
+        document.querySelector(".navbar").classList.remove("even")
+    }
 
     setTimeout(() => {
         isScrolling = false;

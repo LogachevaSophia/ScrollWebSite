@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,95 @@
     <link rel="stylesheet" href="scroll.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="styles.css">
-    
-    
+
+
 </head>
+
 <body>
     <nav class="navbar">
         <ul>
-            <li><a href="#screen-1">О себе</a></li>
-            <li><a href="#screen-2">Проекты</a></li>
-            <li><a href="#screen-3">Навыки</a></li>
-            <li><a href="#screen-4">Контакты</a></li>
+            <li><a href="#screen-1">About me</a></li>
+            <li><a href="#screen-2">Projects</a></li>
+            <li><a href="#screen-3">Skills</a></li>
+            <li><a href="#screen-4">Contants</a></li>
         </ul>
     </nav>
 
     <div class="container">
         <div class="screens-wrapper">
-            <section id="screen-1" class="screen screen-1">
+            <section id="screen-1" class="screen screen-1 blue">
                 <!-- <h1>Экран 1</h1> -->
                 <div class="welcome">
-                    <span class="description">
-                        <h1 class="title">Hello</h1>
-                        <br/> I am front-end developer</span>
-                    <img src="https://i.pinimg.com/564x/97/6a/6a/976a6a302462d6d52fbfa585f230f798.jpg" alt="avatar" class="avatar">
+                    <div class="description">
+                        <span class="font-size-4">Hello</span>
+                        <span class="description">
+                            <h1 class="title orange">I`m Sophia</h1>
+                            <span class="typer cursor font-size-5">I am front-end developer &#9996;</span>
+                        </span>
+                    </div>
+
+                    <img src="https://i.pinimg.com/564x/97/6a/6a/976a6a302462d6d52fbfa585f230f798.jpg" alt="avatar"
+                        class="avatar">
 
                 </div>
 
             </section>
-            <section id="screen-2" class="screen screen-2">
-                <h1>Экран 2</h1>
+            <section id="screen-2" class="screen screen-2 projects">
+                <div class="container">
+                    <h1 class="title orange">My projects</h1>
+                    <div class="cards-list">
+                        <div class="card">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1080,h=886,fit=crop/mjEPX6MRr9iKqn9v/2036ec179661433.y3jvccw3mdm2ldu1-YX41p0ZVEkS5yxM3.jpg"
+                                alt="" />
+                            <hr />
+                            <h2>Video Service "Echo"</h2>
+
+                        </div>
+                        <div class="card">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1080,h=886,fit=crop/mjEPX6MRr9iKqn9v/2036ec179661433.y3jvccw3mdm2ldu1-YX41p0ZVEkS5yxM3.jpg"
+                                alt="" />
+                            <hr />
+                            <h2>Amusement-park</h2>
+                            <a href="https://logachevasophia.github.io/Amusement-park/">Deploy link →</a>
+                            <div class="arrow">
+                                <a href="https://logachevasophia.github.io/Amusement-park/">→</a>
+                            </div>
+                            
+
+                        </div>
+                        <div class="card">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1080,h=886,fit=crop/mjEPX6MRr9iKqn9v/2036ec179661433.y3jvccw3mdm2ldu1-YX41p0ZVEkS5yxM3.jpg"
+                                alt="" />
+                            <hr />
+                            <h2>Vk mini app</h2>
+                            <a href="https://vk.com/app51913650">Deploy link →</a>
+                            <div class="arrow">
+                                <a href="https://vk.com/app51913650">→</a>
+
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1080,h=886,fit=crop/mjEPX6MRr9iKqn9v/2036ec179661433.y3jvccw3mdm2ldu1-YX41p0ZVEkS5yxM3.jpg"
+                                alt="" />
+                            <hr />
+                            <h2>Posts web site</h2>
+                            <div class="arrow">
+                                <a href="https://github.com/LogachevaSophia/PostsWebSite">→</a>
+                            </div>
+
+                        </div>
+                        <div class="card">
+                            <img src="https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1080,h=886,fit=crop/mjEPX6MRr9iKqn9v/2036ec179661433.y3jvccw3mdm2ldu1-YX41p0ZVEkS5yxM3.jpg"
+                                alt="" />
+                            <hr />
+                            <h2>Weather application</h2>
+
+                        </div>
+                    </div>
+
+                </div>
+
             </section>
             <section id="screen-3" class="screen screen-3">
                 <h1>Экран 3</h1>
@@ -45,6 +107,8 @@
         </div>
     </div>
 
-    <script src="Scroll.js"></script>
+    <script src="js/Scroll.js"></script>
+    <script src="js/Typing.js"></script>
 </body>
+
 </html>

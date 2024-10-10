@@ -5,8 +5,8 @@
     top: 0;
     left: 0;
     right: 0;
-    background-color: rgba(255, 255, 255, 0.9); /* Полупрозрачный фон */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000; /* Чтобы навигация была поверх остальных элементов */
 }
 .navbar{
@@ -27,15 +27,16 @@
 
 .navbar a {
     text-decoration: none;
-    color: #333; /* Цвет текста */
-    font-weight: bold;
+    color: var(--g-color-blue);
+    /* color: #333; Цвет текста */
+    /* font-weight: bold; */
+}
+
+.navbar.even a {
+    color: var(--g-color-blue);
 }
 
 .navbar a:hover {
-    color: #007BFF; /* Цвет при наведении */
+    text-decoration: underline;
 }
 
-/* Дополнительно: отступ для контента, чтобы не перекрывался навигацией */
-.container {
-    margin-top: 40px; /* Отступ под фиксированное меню */
-}

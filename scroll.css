@@ -4,6 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: DM Sans, Roboto, sans-serif;
+   
+}
+
+
+body,
+html {
+    height: 100%;
+    overflow: hidden;
     --g-base-font-size: 4px;
     --g-text-body-1-font-size: 13px;
     --g-text-body-1-line-height: 18px;
@@ -17,10 +26,13 @@
     --g-text-caption-1-line-height: 12px;
     --g-text-caption-2-font-size: 11px;
     --g-text-caption-2-line-height: 16px;
-    --g-text-header-3-font-size: var(--g-base-font-size * 3);
-    --g-text-header-4-font-size: var(--g-base-font-size * 4);
-    --g-text-header-5-font-size: var(--g-base-font-size * 5);
-    --g-text-header-10-font-size: var(--g-base-font-size * 10);
+    --g-text-header-3-font-size: calc(var(--g-base-font-size) * 3);
+    --g-text-header-4-font-size: calc(var(--g-base-font-size) * 4);
+    --g-text-header-5-font-size: calc(var(--g-base-font-size) * 5);
+    --g-text-header-7-font-size: calc(var(--g-base-font-size) * 7);
+    --g-text-header-10-font-size: calc(var(--g-base-font-size) * 10);
+    --g-text-header-15-font-size: calc(var(--g-base-font-size) * 15);
+    --g-text-header-20-font-size: calc(var(--g-base-font-size) * 20);
     --g-text-header-1-line-height: 24px;
     --g-text-header-2-font-size: 24px;
     --g-text-header-2-line-height: 28px;
@@ -70,15 +82,15 @@
     --g-border-radius-l: 8px;
     --g-border-radius-xl: 10px;
     --g-focus-border-radius: 2px;
+    --g-color-orange: rgb(255 153 47);
+    --g-color-blue: #2c55e4;
 }
 
-body,
-html {
-    height: 100%;
-    overflow: hidden;
-    /* Запрещаем стандартную прокрутку */
-}
 
+a{
+    text-decoration: none;
+    color: var(--g-color-blue)
+ }
 .container {
     height: 100vh;
     overflow: hidden;
@@ -102,11 +114,11 @@ html {
 }
 
 .screen:nth-child(odd) {
-    background-color: #3498db;
+    /* background-color: #3498db; */
     color: white;
 }
 
 .screen:nth-child(even) {
-    background-color: #2ecc71;
-    color: white;
+    /* background-color: #2ecc71; */
+    /* color: white; */
 }

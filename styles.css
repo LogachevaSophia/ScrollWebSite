@@ -1,14 +1,149 @@
-section .welcome{
+.font-size-4 {
+    font-size: var(--g-text-header-4-font-size);
+}
+
+.font-size-5 {
+    font-size: var(--g-text-header-5-font-size);
+}
+
+.font-size-10 {
+    font-size: var(--g-text-header-10-font-size);
+}
+
+.font-size-15 {
+    font-size: var(--g-text-header-15-font-size);
+}
+
+.font-size-20 {
+    font-size: var(--g-text-header-20-font-size);
+}
+
+hr {
+    height: 6px;
+    background-color: var(--g-color-blue);
+
+}
+
+.blue {
+    background-color: var(--g-color-blue);
+}
+
+.orange {
+    color: var(--g-color-orange);
+}
+
+section .welcome {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: var(--g-spacing-5);
-    justify-content: space-between;
+    /* gap: var(--g-spacing-5); */
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    width: 80%;
 }
-section .title{
-    font-size: var(--g-text-header-5-font-size);
+
+section .title {
+    font-size: var(--g-text-header-20-font-size);
+    /* font-size: 40px; */
 }
-img.avatar{
+
+img.avatar {
     border-radius: 50%;
     max-width: 30%;
+    /* border: 3px solid rgb(227,168,137) */
+}
+
+.cursor {
+    border-right: 2px solid black;
+    animation: blink 0.7s step-end infinite;
+}
+
+.projects .container {
+    /* width: 80%; */
+    /* background-color: red; */
+    height: calc(100% - 50px);
+    /* margin-top: 50px; */
+    padding: 0 var(--g-spacing-3) 0 var(--g-spacing-3);
+    white-space: nowrap;
+    /* Отключаем перенос на новую строку */
+}
+
+.projects .container .cards-list {
+    display: flex;
+    gap: var(--g-spacing-3);
+    overflow-x: auto;
+    /* Добавляем горизонтальный скролл */
+    flex-wrap: nowrap;
+    /* Отключаем перенос строк, чтобы все элементы шли в один ряд */
+}
+
+.projects .container .cards-list .card {
+    flex: 0 0 calc(40% - var(--g-spacing-5));
+    /* Устанавливаем ширину одной карточки */
+    width: 300px;
+    /* Желаемая ширина карточки */
+    max-width: calc(40% - var(--g-spacing-5));
+    /* Максимальная ширина одной карточки */
+    box-sizing: border-box;
+    /* Чтобы padding учитывался в ширине */
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+.projects .container .cards-list .card img {
+    max-width: 100%;
+}
+
+.projects .container .cards-list .card h2 {
+    text-wrap: wrap;
+    font-size: var(--g-text-header-7-font-size);
+}
+
+.projects .container .cards-list .card .arrow {
+    margin-top: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.projects .container .cards-list .card .arrow a{
+    font-size: var(--g-text-header-10-font-size);
+    font-weight: bold;
+}
+
+
+/* Анимация мигания курсора */
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
+
+@media (max-width: 602px) {
+    img.avatar {
+        min-width: 40%;
+    }
+
+    body,
+    html {
+        --g-base-font-size: 3px;
+    }
+
 }
